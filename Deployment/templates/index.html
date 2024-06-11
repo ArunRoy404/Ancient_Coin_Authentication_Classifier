@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <style>
+            .file-input-container {
+                display: inline-block;
+                width: 600px; 
+            }
+            .file-input {
+                width: 100%;
+            }
+            .image-container {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .image-container img {
+                max-width: 400px;
+                height: 400px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 class="text-center mb-4">Ancient Coin Authenticity Classifier (Real or Fake)</h1>
+
+        <form class="p-3 text-center" action='/' method="post" enctype="multipart/form-data">
+            <div class="file-input-container mx-auto">
+                <input class="form-control file-input" type="file" name="imagefile">
+                <input class="btn btn-primary mt-3" type="submit" value="Predict Image">
+            </div>
+        </form>
+
+        {% if prediction %}
+            <div class="image-container">
+                <img src="{{ url_for('uploaded_file', filename=image_path.split('/')[-1]) }}" alt="Predicted Image">
+            </div>
+            <div class="text-center">
+                <p><b>The Coin is {{prediction}}</b></p>
+            </div>
+        {% endif %}
+    </body>
+</html>
