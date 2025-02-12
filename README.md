@@ -27,11 +27,11 @@ Used dataset was collected form a research team.
 ✔️ Performance evaluated using accuracy, loss curves, and confusion matrix.    
 
 ## 📌 How to Use
-# 1️⃣ Clone the repository:  
+## 1️⃣ Clone the repository:  
 ```bash
 git clone https://github.com/ArunRoy404/Ancient_Coin_Authentication_Classifier.git
 ```
-# 2️⃣ Install dependencies:
+## 2️⃣ Install dependencies:
 ```bash
 pip install os
 pip install numpy
@@ -39,23 +39,25 @@ pip install matplotlib
 pip install tensorflow
 pip install notebook
 ```
-# 3️⃣ Install flask:
+## 3️⃣ Install flask:
 ```bash
 pip install flask
 ```
-# 3️⃣ To train the model:
+## 3️⃣ To train the model:
 ```bash
 code "Ancient Coin Authentication Classifier.ipynb"
 ```
-# 4️⃣ To run the model using flask:
+## 4️⃣ To run the model using flask:
 ```bash
 python app.py
 ```
 
 ## 📊 Model Performance  
-✔️ **Accuracy:** 𝑥𝑥% 🏆  
-✔️ **Loss:** 𝑥𝑥 📉  
-✔️ Confusion matrix 📊 and ROC curve 📈  
+✔️ **Accuracy:** 98.17% 🏆  
+✔️ **Loss:** 6.91% 📉  
+✔️ **Confusion matrix 📊**  
+![image](https://github.com/user-attachments/assets/9b15349b-adc2-4275-a3e4-39b3588d3672)
+
 
 
 ## 🚀 Future Improvements  
